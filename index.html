@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClimateGate</title>
+</head>
+
+<body>
+  <script>
+    // data from: https://data.giss.nasa.gov/gistemp/
+    // Mean from: https://earthobservatory.nasa.gov/world-of-change/global-temperatures
+
+    getData();
+
+    async function getData() {
+      const response = await fetch('https://statsapi.web.nhl.com/api/v1/schedule');
+      const data = await response.text();
+      console.log(data);
+    }
+  </script>
+
+</body>
+
+</html>
